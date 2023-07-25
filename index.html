@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit website</title>
+    <!-- ! tailwind css and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  ! Font family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-lato {
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <h1>up</h1>
+  <body class="font-lato">
+    <header class="container mx-auto">
+      <div
+        class="flex flex-row-reverse justify-between mt-[2rem] rounded-[600px] py-4 lg:invisible"
+      >
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 md:mr-16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#121212"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu right-0 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-row justify-center items-center px-8">
+          <img src="./images/logo.png" width="54px" height="60px" alt="" />
+          <a
+            class="btn btn-ghost normal-case text-[20px] font-bold text-[#121212]"
+            >Fruit Burst</a
+          >
+        </div>
+      </div>
+
+      <!-- nav lg size ####################  -->
+      <nav
+        class="grid grid-cols-3 gap-4 bg-[#F85559] mt-[2rem] rounded-[600px] py-4 lg:visible invisible lg:-mt-20"
+      >
+        <div class="flex flex-row items-center gap-8 list-none pl-8">
+          <li class="text-[18px] font-medium text-white">
+            <a href="">Home</a>
+          </li>
+          <li class="text-[18px] font-medium text-white">
+            <a href="">About Us</a>
+          </li>
+          <li class="text-[18px] font-medium text-white">
+            <a href="">Shop</a>
+          </li>
+          <li class="text-[18px] font-medium text-white">
+            <a href="">Shop</a>
+          </li>
+        </div>
+
+        <div class="flex flex-row justify-center items-center">
+          <img src="./images/logo.png" width="54px" height="60px" alt="" />
+          <a href="" class="text-[40px] font-bold text-white px-4"
+            >Fruit Burst</a
+          >
+        </div>
+
+        <div class="flex flex-row justify-center items-center relative">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="bg-white py-3 rounded-[50px] px-4 w-[400px] text-[16px] font-normal text-[#121212] border-none outline-none"
+          />
+          <div class="absolute right-20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#121212"
+            >
+              <path
+                d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z"
+                stroke="#121212"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
